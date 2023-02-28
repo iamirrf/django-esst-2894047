@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+<h1>&nbsp;</h1>
+
+<form method='post'> {% csrf_token %}
+    {{ form.as_p }}
+    <p>&nbsp;</p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="shadow__btn">LOGIN</button>
+
+</form>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method='post'>{% csrf_token %}
+    <p>Are you sure you want to delete "{{ notes.title}}" ?</p>
+    <p>Your note will be Permanently deleted!</p>
+    
+    <a href="{% url 'notes.list' %}" class="btn btn-success my-5"> Back </a>
+    <input type="submit" class="btn btn-danger" value="Confirm"/>
+    
+</form>
+
+{% endblock %}
